@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build step required\"",
+    "build": "npm ci && echo \"No build step required\"",
     "start": "node app.js",
     "dev": "env-cmd -f ./.env nodemon app.js"
   },
