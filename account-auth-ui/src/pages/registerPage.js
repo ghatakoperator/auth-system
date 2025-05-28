@@ -82,7 +82,7 @@ function RegisterPage() {
             payload.append('image', imageFile);
 
             const response = await axios.post(
-                `${expressURL}user/create`,
+                `${expressURL}/user/create`,
                 payload,
                 { headers: { 'Content-Type': 'multipart/form-data' } }
             );
