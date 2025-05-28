@@ -1,0 +1,71 @@
+.legend-color-verified {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #5E8AC7;
+}
+
+.legend-color-discrepancy {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ACBCDD;
+}
+
+.legend-color-utv {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #D1DDF3;
+}
+
+.legend-color-stop {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #F4B72F;
+}
+
+.time-period-cvr {
+  border-right: 1px solid #EAEAEA;
+  padding: 6px 15px;
+}
+
+.line-datepicker-inside input{
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  max-width: 100px;
+}
+
+.line-date-picker-container {
+  background: #fff;
+  padding: 0 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.line-datepicker-inside {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.custom-datepicker {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 13px;
+  width: auto;
+}
+
+.calendar-icon {
+  margin-left: 8px;
+  color: #6c757d;
+  cursor: pointer;
+}

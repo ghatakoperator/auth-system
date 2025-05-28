@@ -1,0 +1,45 @@
+.CircularProgressbar{
+  width: auto !important;
+  height: 50px;
+  .CircularProgressbar-path{
+    stroke: #47AA45 !important;
+  }
+}
+
+.progress-bar-section{
+  .progress-container {
+    .progress-bar {
+      position: relative;
+      height: 8px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      overflow: initial;
+      .progress-fill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background: #47AA45;
+        transition: width 0.1s linear;
+        border-radius: 5px;
+      }
+      .airplane {
+        position: absolute;
+        transition: left 0.1s linear;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  .progress-bar-section {
+    .progress-container {
+      .progress-bar {
+        .airplane {
+          width: 32px !important;
+          height: auto;
+        }
+      }
+    }
+  }
+}

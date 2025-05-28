@@ -1,0 +1,135 @@
+:root {
+  --size: 75px;
+  --clr-bg: #272324;
+  --clr1: #5E8AC7;
+  --clr2: #5E8AC7;
+  --clr3: #5E8AC7;
+  --clr4: #5E8AC7;
+  --clr5: #5E8AC7;
+}
+.invictus-splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  /*background: #272324;*/
+  background: #fff;
+  /*background-color: rgba(0, 0, 0, 0.7);*/
+  z-index: 1100;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, auto);
+  place-items: center;
+}
+.spinner {
+  --animation-duration: 1000ms;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.spinner-item {
+  width: calc(var(--size) / 12);
+  height: 50%;
+  background: var(--clr-spinner);
+  animation: spinner1 var(--animation-duration) ease-in-out infinite;
+}
+
+@keyframes spinner1 {
+  50% {
+    transform: scaleY(0.25);
+  }
+}
+
+
+.spinner-item:nth-child(1) {
+  --clr-spinner: var(--clr1);
+  animation-delay: calc(var(--animation-duration) / 10 * -3);
+}
+
+.spinner-item:nth-child(2) {
+  --clr-spinner: var(--clr5);
+  animation-delay: calc(var(--animation-duration) / 10 * -1);
+}
+
+.spinner-item:nth-child(3) {
+  --clr-spinner: var(--clr3);
+  animation-delay: calc(var(--animation-duration) / 10 * -2);
+}
+
+.spinner-item:nth-child(4) {
+  --clr-spinner: var(--clr4);
+  animation-delay: calc(var(--animation-duration) / 10 * -1);
+}
+
+.spinner-item:nth-child(5) {
+  --clr-spinner: var(--clr2);
+  animation-delay: calc(var(--animation-duration) / 10 * -3);
+}
+
+@media (min-width: 600px) {
+  .spinner-container {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .moon-splash-logo {
+    margin-top: 100px;
+  }
+  img {
+    width: 200px;
+  }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .invictus-splash-screen .moon-splash-logo img{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .invictus-splash-screen .moon-add-logo img{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+  .invictus-splash-screen .moon-splash-logo img{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .invictus-splash-screen .moon-add-logo img{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px){
+  .invictus-splash-screen .moon-splash-logo img{
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .invictus-splash-screen .moon-add-logo img{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

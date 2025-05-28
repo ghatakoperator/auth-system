@@ -1,0 +1,36 @@
+@import 'src/assets/scss/fonts';
+@import 'src/assets/scss/bg-color';
+@import 'src/assets/scss/buttons';
+@import 'src/assets/scss/forms';
+@import 'src/assets/scss/header';
+@import 'src/assets/scss/side-nav';
+@import 'src/assets/scss/body';
+@import 'src/assets/scss/progress';
+@import 'src/assets/scss/scroll';
+@import 'src/assets/scss/sweet-alert';
+@import 'src/assets/scss/modal';
+@import 'src/assets/scss/card';
+@import 'src/assets/scss/table';
+@import 'src/assets/scss/badges';
+@import 'src/assets/scss/tooltips';
+@import 'src/assets/scss/icons';
+@import 'src/assets/scss/date-picker';
+@import 'src/assets/scss/radio-checkbox';
+@import 'src/assets/scss/pagination';
+
+@import 'src/assets/scss/chart';
+@import 'src/assets/scss/splash-screen';
+@import 'src/assets/scss/segmented-tab';
+@import "src/assets/scss/bootstrap-toast";
+
+
+srcApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F8F9FA;
+}
+
+srcpac-container {
+  z-index: 99999 !important;
+}

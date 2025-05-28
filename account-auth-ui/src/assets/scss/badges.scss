@@ -1,0 +1,13 @@
+.badge{
+  display: inline !important;
+  font-weight: normal !important;
+  &.success-badge{
+
+  }
+  &.pending-badge{
+    background-color: #D9D207 !important;
+  }
+  &.failed-badge{
+    background-color: #F3797E !important;
+  }
+}

@@ -1,0 +1,73 @@
+// Background colors and overall layout
+$bg-color-white: #ffffff;
+$bg-color-form: #b2cdf34d;
+$primary-color: #5e8ac7;
+
+.eval-logo {
+  width: 220px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.adduser-img{
+  width:20px;
+  height:20px;
+
+}
+
+.password-validation ul {
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between items */
+}
+
+.password-validation li {
+  margin: 0;
+  flex: 1 1 45%; /* 2 items per line */
+  display: flex;
+  align-items: center;
+}
+
+.password-validation .valid {
+  color: green !important;
+}
+
+.password-validation .invalid {
+  color: red !important;
+}
+
+.password-validation li .valid,
+.password-validation li .invalid {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 16px;
+}
+
+.password-validation .valid {
+  color: green !important;
+}
+
+.password-validation .invalid {
+  color: red !important;
+}
+
+.password-validation-container {
+  display: block !important; /* Ensures a block layout */
+  margin-top: 10px !important;
+}
+
+.validation-rule {
+  color: red !important;
+  font-size: 12px !important;
+  text-align: left !important;
+  margin-top: 5px !important;
+}
+
+.validation-rule.invalid {
+  color: red !important;  /* Highlight invalid rules in red */
+}
+
+.validation-rule.valid {
+  color: green !important;  /* Highlight invalid rules in red */
+}

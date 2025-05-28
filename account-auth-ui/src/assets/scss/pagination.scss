@@ -1,0 +1,33 @@
+.eval-pagination{
+  .page-item {
+    .page-link {
+      border-radius: 50% !important;
+      width: 20px;
+      height: 24px;
+      margin: 0 .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      font-size: 12px;
+      color: #000000 !important;
+    }
+    &.active{
+      .page-link{
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        color: #FFFFFF !important;
+        background: #5E8AC7 !important;
+      }
+    }
+    &:first-child,
+    &:last-child{
+      .page-link{
+        color: #000000 !important;
+      }
+    }
+  }
+}
+
+.border-top-pagination {
+  border-bottom: 1px solid #f2f2f2;
+}

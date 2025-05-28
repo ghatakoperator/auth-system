@@ -1,0 +1,100 @@
+$primary-color: #5E8AC7;
+
+.swal2-container {
+  .swal2-popup {
+    .swal2-icon {
+      width: 3em;
+      height: 3em;
+      .swal2-icon-content {
+        font-size: 2.75em;
+      }
+    }
+    .swal2-title {
+      padding: 0 1em 0;
+      font-size: 1.4em;
+    }
+    .swal2-html-container {
+      font-size: 1em;
+      padding: .4em 1em .3em;
+    }
+    .swal2-actions {
+      .swal2-confirm{
+        background-color: $primary-color;
+        border: none;
+        min-width: 100px;
+        padding: 10px;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+      .swal2-deny{
+        background: #f7f7f7;
+        border: none;
+        min-width: 100px;
+        padding: 10px;
+        font-size: 16px;
+        color: #373737;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      }
+      .swal2-cancel{
+
+      }
+    }
+  }
+}
+
+.swal2-icon-error{
+  .swal2-icon {
+    &.swal2-error{
+      .swal2-x-mark{
+        .swal2-x-mark-line-left{
+          top: 22px !important;
+          left: 9px !important;
+          width: 30px !important;
+          height: 5px !important;
+        }
+        .swal2-x-mark-line-right{
+          top: 22px !important;
+          left: 8px !important;
+          width: 30px !important;
+          height: 5px !important;
+        }
+      }
+    }
+  }
+}
+
+.swal2-icon-success{
+  .swal2-icon {
+    width: 5em !important;
+    height: 5em !important;
+    &.swal2-success{
+      .swal2-x-mark{
+        .swal2-x-mark-line-left{
+          top: 22px !important;
+          left: 9px !important;
+          width: 30px !important;
+          height: 5px !important;
+        }
+        .swal2-x-mark-line-right{
+          top: 22px !important;
+          left: 8px !important;
+          width: 30px !important;
+          height: 5px !important;
+        }
+      }
+    }
+  }
+}
+
+.wide-swal {
+  width: 600px !important;
+  max-width: 90vw;
+}

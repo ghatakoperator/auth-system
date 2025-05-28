@@ -1,0 +1,264 @@
+// Fonts and text styling
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$font-main: 'Poppins', sans-serif;
+
+body, html {
+  font-family: $font-main !important;
+}
+
+/*Text Size*/
+.f-10 {
+  font-size: 10px !important;
+}
+.f-11 {
+  font-size: 11px !important;
+}
+.f-12 {
+  font-size: 12px !important;
+}
+.f-13 {
+  font-size: 13px !important;
+}
+.f-14 {
+  font-size: 14px !important;
+}
+.f-15 {
+  font-size: 15px !important;
+}
+.f-16 {
+  font-size: 16px !important;
+}
+.f-17 {
+  font-size: 17px !important;
+}
+.f-18 {
+  font-size: 18px !important;
+}
+.f-19 {
+  font-size: 19px !important;
+}
+.f-20 {
+  font-size: 20px !important;
+}
+.f-21 {
+  font-size: 21px !important;
+}
+.f-22 {
+  font-size: 22px !important;
+}
+.f-23 {
+  font-size: 23px !important;
+}
+.f-24 {
+  font-size: 24px !important;
+}
+.f-25 {
+  font-size: 25px !important;
+}
+.f-26 {
+  font-size: 26px !important;
+}
+.f-27 {
+  font-size: 27px !important;
+}
+.f-28 {
+  font-size: 28px !important;
+}
+.f-29 {
+  font-size: 29px !important;
+}
+.f-30 {
+  font-size: 30px !important;
+}
+
+/*Text Align*/
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/*Font Weight*/
+.font-normal{
+  font-weight: normal !important;
+}
+.font-bold{
+  font-weight: 500;
+}
+.font-bolder{
+  font-weight: 700;
+}
+
+/*Brand Text Color*/
+.c-blue {
+  color: #5E8AC7 !important;
+}
+
+.c-gray {
+  color: #797979 !important;
+}
+
+.c-white {
+   color: #fff !important;
+}
+
+.c-red {
+  color: #FD0D0D !important;
+}
+
+.c-black {
+  color: #373737 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+.ms-45{
+  margin-left: 45px !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.overflow {
+  flex-grow: 1 !important; /* Allows the notification data to take up remaining space */
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 150px !important; /* Adjust as needed to fit your design */
+}
+
+.notification-card.interacted .notification-indicator {
+  background-color: #007BFF80 !important; /* Adjusted blue color for interacted */
+}
+
+.notification-card.interacted .notification-data {
+  color: #999 !important;
+}
+
+.notification-card {
+  display: flex !important;
+  align-items: center !important;
+  padding: 12px !important;
+  margin-bottom: 5px !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  position: relative !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.notification-indicator {
+  width: 5px !important;
+  height: 100% !important;
+  background-color: #5E8AC7
+  !important; /* The blue side indicator color */
+  position: absolute !important;
+  left: 0 !important;
+}
+
+.notification-content {
+  flex-grow: 1 !important;
+  padding-left: 20px !important; /* Space between the indicator and text */
+}
+
+.notification-title {
+  font-weight: bold !important;
+}
+
+.notification-data {
+  display: block !important; /* Ensure it's on a new line, adjust according to design */
+  color: #666 !important; /* Sets the color, ensuring it overrules other color properties */
+  overflow: hidden !important; /* Ensures that the overflow text is hidden, overriding other overflow settings */
+  text-overflow: ellipsis !important; /* Renders ellipses ('...') to represent clipped text, preventing override */
+  white-space: nowrap !important; /* Text will never wrap to the next line, critical for maintaining single line appearance */
+  width: 90% !important; /* Adjust width as needed to fit your layout, ensuring it takes precedence */
+  margin-right: 10px !important; /* Ensures some spacing before the date or other elements, maintaining layout consistency */
+}
+
+
+.notification-time {
+  display: block !important; /* Ensure it's on a new line, adjust according to design */
+  font-size: 0.8rem !important;
+  color: #999 !important;
+}
+
+.read {
+  color: #CCC !important; /* Muted color for read notifications */
+}
+
+.unread {
+  background-color: #ffffff !important; /* Different background for unread notifications, if needed */
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa !important; /* Hover effect */
+}
+
+.user-status {
+  width: 20px !important;
+  height: auto !important;
+  text-align: center !important;
+  color: #fff !important;
+  padding: 1px 2px !important;
+  font-size: 12px !important;
+}
+
+.info-icon {
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.verification-cost-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  /*max-width: 360px;
+  width: 100%;*/
+  img {
+    width: 50px;
+  }
+  .rupee-icon-circle {
+    background: linear-gradient(to bottom right, #FFD54F, #FBC02D);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .rupee-symbol {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2E2E2E;
+  }
+  .cost-label {
+    font-size: 18px;
+    color: #5F6368;
+    margin-bottom: 5px;
+  }
+  .cost-amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1A1A1A;
+  }
+}
+
+
+
+
+
